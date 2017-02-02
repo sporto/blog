@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Sebastian's Blog"
-baseurl = "http://sebastianporto.com"
+baseurl = "http://sebastianporto.com/blog"
 theme = "hemingway2"
 
 [params]

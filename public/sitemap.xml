@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://sebastianporto.com/posts/2017/from-react-to-elm/</loc>
+    <loc>http://sebastianporto.com/blog/posts/2017/from-react-to-elm/</loc>
     <lastmod>2017-02-02T17:33:00+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sebastianporto.com/posts/</loc>
+    <loc>http://sebastianporto.com/blog/posts/</loc>
     <lastmod>2017-02-02T17:33:00+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://sebastianporto.com/</loc>
+    <loc>http://sebastianporto.com/blog/</loc>
     <lastmod>2017-02-02T17:33:00+11:00</lastmod>
     <priority>0</priority>
   </url>

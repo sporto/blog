@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sebastian&#39;s Blog</title>
-    <link>http://sebastianporto.com/index.xml</link>
+    <link>http://sebastianporto.com/blog/index.xml</link>
     <description>Recent content on Sebastian&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Feb 2017 17:33:00 +1100</lastBuildDate>
-    <atom:link href="http://sebastianporto.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://sebastianporto.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>From React to Elm</title>
-      <link>http://sebastianporto.com/posts/2017/from-react-to-elm/</link>
+      <link>http://sebastianporto.com/blog/posts/2017/from-react-to-elm/</link>
       <pubDate>Thu, 02 Feb 2017 17:33:00 +1100</pubDate>
       
-      <guid>http://sebastianporto.com/posts/2017/from-react-to-elm/</guid>
+      <guid>http://sebastianporto.com/blog/posts/2017/from-react-to-elm/</guid>
       <description>
 
 &lt;p&gt;I have been working in React full time for probably two and a half years now. I work for &lt;a href=&#34;https://staxapp.io&#34;&gt;https://staxapp.io&lt;/a&gt; which is large application mostly built on React for the Front end. During this time I have enjoyed working with React very much, it is a great library for building front end applications.&lt;/p&gt;
