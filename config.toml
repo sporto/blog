@@ -1,3 +1,17 @@
 languageCode = "en-us"
-title = "My New Hugo Site"
-baseurl = "http://example.org/"
+title = "Sebastian's Blog"
+baseurl = "http://sebastianporto.com"
+theme = "hemingway2"
+
+[params]
+[params.highlight]
+style = "github"
+languages = ["javascript", "elm"]
+
+[[params.social]]
+url = "https://github.com/sporto"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "https://twitter.com/sebasporto"
+fa_icon = "fa-twitter"
