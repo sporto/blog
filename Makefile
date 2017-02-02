@@ -3,3 +3,6 @@ serve:
 
 server-draft:
 	hugo server --buildDrafts
+
+deploy:
+	hugo && rsync -avz --delete public/ ${SSH_USER}@sebastianporto.com:~/public_html/
