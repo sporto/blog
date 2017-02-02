@@ -1,11 +1,11 @@
 +++
 date = "2017-02-02T17:33:00+11:00"
 title = "From React to Elm"
-draft = true
+draft = false
 
 +++
 
-I have been working in React full time for probably two and a half years now. I work for https://staxapp.io which is large application mostly built on React for the Front end. During this time I have enjoyed working with React very much, it is a great library for building front end applications. 
+I have been working in React full time for probably two and a half years now. I work for https://staxapp.io which is large application mostly built on React for the Front end. During this time I have enjoyed working with React very much, it is a great library for building front end applications.
 
 At some point in 2015 I heard about Elm and I was intrigued. I have been dabbling in Elm for over a year, mostly building libraries and making little side projects. 
 
