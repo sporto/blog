@@ -9,7 +9,7 @@ I have been working in React full time for probably two and a half years now. I 
 
 At some point in 2015 I heard about Elm and I was intrigued. I have been dabbling in Elm for over a year, mostly building libraries and making little side projects. 
 
-About two months ago we decided to give Elm a try in our production code, so I have been writing Elm almost full time for the last 6 weeks. This is how I see Elm compared to React.
+About two months ago we decided to give Elm a try in our production code, so I have been writing Elm almost full time for the last 2 months. This is how I see Elm compared to React.
 
 # General differences from JavaScript
 
