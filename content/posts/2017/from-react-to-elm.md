@@ -295,6 +295,7 @@ I'm enjoying developing with Elm a lot, I believe that the benefits far outweigh
 
 If you are interested here are some good learning resources:
 
-- https://pragmaticstudio.com/elm
+- https://guide.elm-lang.org/
 - http://elm-tutorial.org/
+- https://pragmaticstudio.com/elm
 - http://elmprogramming.com/
