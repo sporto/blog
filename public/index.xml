@@ -307,8 +307,9 @@ names[0].foo()
 &lt;p&gt;If you are interested here are some good learning resources:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://pragmaticstudio.com/elm&#34;&gt;https://pragmaticstudio.com/elm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://guide.elm-lang.org/&#34;&gt;https://guide.elm-lang.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://elm-tutorial.org/&#34;&gt;http://elm-tutorial.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pragmaticstudio.com/elm&#34;&gt;https://pragmaticstudio.com/elm&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://elmprogramming.com/&#34;&gt;http://elmprogramming.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
