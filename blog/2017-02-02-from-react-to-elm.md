@@ -1,6 +1,7 @@
 ---
 layout: default.liquid
 
+published_date: 2017-02-02 21:00:00 +1000
 title: From React to Elm
 is_draft: false
 ---
@@ -11,9 +12,9 @@ At some point in 2015 I heard about Elm and I was intrigued. I have been dabblin
 
 About two months ago we decided to give Elm a try in our production code, so I have been writing Elm almost full time for the last 2 months. This is how I see Elm compared to React.
 
-# General differences from JavaScript
+## General differences from JavaScript
 
-## Elm is safe and robust
+### Elm is safe and robust
 
 In JavaScript it is common to have runtime exceptions, in Elm on the other hand this is rare. To give you an example I might have an empty list, but I try to access the first element and do something with it:
 
@@ -35,7 +36,7 @@ list
 
 This kind of safety is everywhere in Elm. This results in applications that are a lot more resilient and robust.
 
-## Better error handling
+### Better error handling
 
 In JavaScript it is easy to forget about handling errors and edge cases. The language doesn't push you to think about them in any way. You can just ignore all errors and code only the happy path. There won't be any obvious code smells after doing this. But most likely the app will break at some point in production.
 
@@ -62,7 +63,7 @@ case response of
 
 Seeing `_ ->` tells me that I haven't dealt with some code paths in a specific way.
 
-## Terse
+### Terse
 
 With ES6 we can write functions that can be partially applied like:
 
@@ -101,7 +102,7 @@ collection
 
 If you like functional programming in JavaScript you will find that Elm is a much nicer fit.
 
-## Real immutability
+### Real immutability
 
 Immutability is great for making predictable and robust applications. In JavaScript there are libraries like **Immutable.js** which take you some of the way there. But Immutable.js is not really immutable, you can still mutate objects inside collections. While using this library you need to be diligent and careful, is  easy to do forget to do the correct thing and mutate state even using this library.
 
@@ -111,7 +112,7 @@ It is all trade-off with immutability when doing JavaScript.
 
 In Elm everything is immutable. There is no possibility of doing the incorrect thing, you can never mutate an existing thing, the language just doesn't let you.
 
-## Easier to learn
+### Easier to learn
 
 I believe that JavaScript has grown quite complex, there are so many concepts to learn now, like prototypes, classes, this, coercions, promises, generators, async/await, ES6+ features, experimental features that people use everywhere. And the language just keeps growing.
 
@@ -119,7 +120,7 @@ Many of the things you learn are often at odds with other things in the language
 
 Elm in the other hand is a smaller and coherent language. I'm convinced that Elm is an easier language to learn than JS for a new programmer.
 
-## JS caveats
+### JS caveats
 
 JavaScript is also full of caveats that trip people:
 
@@ -176,17 +177,17 @@ On the other hand, the type system in Elm is extremely robust. The Elm compiler 
 
 I have used **Typescript** for small projects and it seems to pick more things than Flow. But I would need to make a large application with TS to be confident that is more robust.
 
-## Faster iteration
+### Faster iteration
 
 While doing UI work using JavaScript my usual workflow is to code something, open the browser, click around and watch something blow up. Then fix that error and repeat until everything works without issues. This process can be time consuming. Hot state reloading helps with this when it works.
 
 I have noticed that with Elm my workflow has changed substantially. Now I usually code something, run the compiler in the CLI and see the errors there. Then keep doing this until it compiles. Just then open the browser and click around for find issues. Most of the time things work as expected, if they don't it is because a business logic issue, almost never due to a runtime error. This process is much faster than refreshing the page and interacting with the browser, and also finds edge-case errors that might not be obvious with manual testing.
 
-## Better refactoring
+### Better refactoring
 
 Because of the type system, refactoring in Elm is a great experience. I can change a function parameter and the compiler will tell me all the places I need to fix in the application. I haven't found Flow to be that useful in refactoring. I would say that a statically typed language like Elm allows me to be more agile than a dynamic language. I can change and refactor code easily with confidence. The cost of change in JavaScript feels much higher.
 
-## Controlled side effects
+### Controlled side effects
 
 In JavaScript I can have side effects anywhere e.g. get the current time, access local storage, mutate state, etc. This can be handy but also makes my functions difficult to test and reason about. I cannot tell what a function is doing without looking at the implementation.
 
@@ -195,9 +196,9 @@ In Elm all functions are pure, meaning they can't interact with the “outside w
 - Easier to test, because they can only return values, not interact with the outside world
 - And easier to reason about, as I can see exactly what a function is doing by looking at the type signature.
 
-# React specific
+## React specific
 
-## Simpler
+### Simpler
 
 In React you have many way to do things e.g.
 
@@ -223,13 +224,13 @@ I often find myself going for one way of doing something and then later on chang
 
 In Elm there are less decisions to make, there is only way of doing things, which is just composing pure functions.
 
-## More flexibility
+### More flexibility
 
 In React every component must return one root element. This works most of the time except when it doesn't. For example sometimes I want a component to return two table rows as they represent a logical unit. You can't do this with React.
 
 In Elm there is no such limitation. Your views can return a list of elements, then we just concatenate the list together. Views in Elm are just functions and they can return whatever I need.
 
-## Easier to set up
+### Easier to set up
 
 Setting up a React project can be very involving, there are lots of decisions to make and everything has to be set just right for it to work together. Common things that need to be configured can include:
 
@@ -245,7 +246,7 @@ Getting all these things to work nicely together can be huge time sink.
 
 In Elm there is a lot less to do, usually it comes down to downloading Elm and setting webpack. Everything else is already covered by Elm.
 
-## Simpler routing
+### Simpler routing
 
 We use React Router 2 in our application, I haven't tried the newest version yet, so RR 4 may be much simpler. But in comparison to RR 2, routing in Elm feels incredible simple. RR is full of lifecycle hooks and has a non-trivial API to learn.
 
@@ -253,15 +254,15 @@ In contrast, routing in Elm is just a function that takes the browser location a
 
 Adding "middleware" or "hooks" in Elm is also very straightforward, everything is made of functions that can be trivially composed together.
 
-# Trade-offs
+## Trade-offs
 
 There are of course trade-offs:
 
-## More DIY
+### More DIY
 
 There are a lot more ready made components in React than Elm. We haven't found this to be huge issue however. We had to build some common components ourselves but the amount of available libraries is increasing rapidly as the community is growing.
 
-## Code splitting, code sharing and SSR
+### Code splitting, code sharing and SSR
 
 Code splitting in Elm is not a thing for the moment. We do this using Webpack, but we do it in the JavaScript side.
 
@@ -269,27 +270,27 @@ Also sharing bundled code between Elm apps is not possible yet, as I understand 
 
 Furthermore, server side rendering still not possible. Not easily at least.
 
-## Interacting with JavaScript
+### Interacting with JavaScript
 
 Interacting with JavaScript libraries is possible, via ports, but can be tedious.
 
 This is not a big deal when there is only a handful of things you need to do in JavaScript, but it can become annoying if you need to pass a lot of message back and forth.
 
-## JSON decoders
+### JSON decoders
 
 As Elm is a static typed language we need to decode and encode between JSON and Elm records all the time. This can feel laborious and confusing at first, but with practice it becomes a non-issue. The type safety is definitely worth this.
 
-## Some boilerplate for simple things
+### Some boilerplate for simple things
 
 There are times where you need a simple piece of "internal" state in a view e.g. `collapsed=true/false`. This is quite simple to handle with component state in React.
 
 In Elm we cannot do this, all state must be in one place. This forces us to add a decent amount of boilerplate in the application to handle to handle the state for a view. E.g. state needs to be passed down the views. Messages need to wired up from the root to the relevant views.
 
-## CSS still a WIP
+### CSS still a WIP
 
 Dealing with CSS in Elm still feels like a work in progress. There is `elm-css` which is great library for defining CSS rules. But we  are still experimenting on how to structure the CSS in a big application. For example: how to aggregate all CSS for all views, how to namespace class names, how to inject the CSS in the page. These are some problems that are already solved in JavaScript, but still unclear in Elm.
 
-# Conclusion
+## Conclusion
 
 I'm enjoying developing with Elm a lot, I believe that the benefits far outweigh the trade-offs. The safety and refactoring experience alone are huge selling points for me. We definitely intend do keep using Elm in new features in our application and new projects.
 

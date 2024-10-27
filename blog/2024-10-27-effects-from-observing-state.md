@@ -1,6 +1,7 @@
 ---
 layout: default.liquid
 
+published_date: 2024-10-27 21:00:00 +1000
 title: Firing effects by observing state is not a good pattern
 is_draft: false
 ---

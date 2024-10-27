@@ -1,10 +1,8 @@
 ---
 layout: default.liquid
+title: Blog
 ---
-## Blog!!!
 
 {% for post in collections.posts.pages %}
-#### {{post.title}}
-
-[{{ post.title }}]({{ post.permalink }})
+[{{ post.published_date | date: "%Y-%m-%d" }} {{ post.title }}]({{ post.permalink }})
 {% endfor %}

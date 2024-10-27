@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
+    	<meta charset="utf-8">
+     	<title>{{ page.title }}</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="/assets/reset.css">
+      <link rel="stylesheet" href="/assets/styles.css">
     </head>
     <body>
-    <div>
-      <h2>{{ page.title }}</h2>
-      {{ page.content }}
-    </div>
+    <nav class="main"><a href="/">Home</a></nav>
+    <main>
+      <div>
+	      <h1>{{ page.title }}</h1>
+	      {{ page.content }}
+      </div>
+    </main>
   </body>
 </html>
